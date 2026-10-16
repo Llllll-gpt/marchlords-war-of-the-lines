@@ -1,31 +1,30 @@
-# 划疆者 · Marchlords: War of the Lines
+# Marchlords: War of the Lines
 
-一款可离线游玩的领土争夺与消除策略游戏。玩家指挥蓝狮王师，对抗赤旗军，穿越四境争夺破碎的王印。
+Marchlords is an offline territory strategy game built around match-based mana generation and battlefield commands. Lead the Blue Lions against the Red Banner across four regions to reclaim the shattered royal seal.
 
-## 游玩
+## Play
 
-下载仓库 ZIP 并完整解压，使用 Edge 或 Chrome 打开 `index.html`。图片、音乐和音效存放在 `assets/` 中，需与 `index.html` 保持相对位置。无需安装或联网。首次点击页面后可开启音乐。
+Download the repository as a ZIP and extract it fully. Open `index.html` in Edge or Chrome. Keep the `assets/` directory beside `index.html` so images, music, and sound effects load correctly. No installation or internet connection is required. Click the page or the music button to enable audio.
 
-主界面可选择普通战役、困难、噩梦与无尽征途。任意难度完成第 12 关后解锁无尽模式。主界面与战斗设置中可切换中文或 English，语言偏好保存在当前浏览器。
+The game includes Normal, Hard, Nightmare, and Endless March modes. Clear Stage 12 on any difficulty to unlock Endless March. Choose Chinese or English in Settings on either the main menu or the battlefield; the browser remembers your selection.
 
-游戏进度保存在本机浏览器，换浏览器、电脑或文件路径可能无法沿用旧存档。原有单文件转发版如需保留本地进度，请继续使用原来的 HTML 路径。
+Progress is stored locally by your browser. Switching browsers, computers, or file locations may make an earlier save unavailable. If you already use the original single-file edition and want to keep its local progress, continue using that file at its existing location.
 
-## 操作与内容
+## Gameplay
 
-- 消除棋盘上的色块积累魔力，部署兵种并占领领土。
-- 框选或点击己方部队后，可以指定敌军、建筑或目标地块；战术暂停期间也可以下达命令。
-- 无尽征途每场约 4 分钟，战后获得强化，基地生命跨场保留。
-- 详情见 [`操作与更新说明.txt`](操作与更新说明.txt)、[`无尽模式说明.txt`](无尽模式说明.txt) 与 [`疆线史诗.txt`](疆线史诗.txt)。
+- Match colored tiles to gain mana, deploy troops, and capture territory.
+- Select individual squads or drag a selection box, then order them toward enemies, structures, or a destination tile. Orders can also be issued during tactical pause.
+- Endless March features timed battles, upgrades between rounds, and base health that carries over.
+- More details: [Gameplay and updates](GAMEPLAY_AND_UPDATES.txt), [Endless mode guide](ENDLESS_MODE_GUIDE.txt), and [World lore](WORLD_LORE.txt). These longer guides are currently written in Chinese; the game itself supports both languages.
 
-## 文件结构
+## Repository contents
 
-- `index.html`：HTML、CSS 与 JavaScript 游戏源码，媒体已从内嵌数据中分离，便于查看和修改。
-- `assets/media/`：从原版单文件提取的图像、背景音乐与音效，文件名为内容哈希。
-- `assets/audio/`：原本独立的音效文件。
-- `app-icon.png`：游戏图标。
-- `ASSETS-LICENSE.md`：媒体素材授权说明。
+- `index.html` — complete HTML, CSS, and JavaScript game source. Embedded media has been extracted so the code is easier to inspect and edit.
+- `assets/media/` — extracted images, music, and sound effects, named by content hash.
+- `assets/audio/` — sound effects that were already separate files.
+- `app-icon.png` — game icon.
+- `ASSETS-LICENSE.md` — media rights and reuse terms.
 
-## 授权
+## License
 
-HTML、CSS 和 JavaScript 游戏代码采用 [MIT License](LICENSE)。图片、音乐、音效与图标不在 MIT 授权范围内；详见 [ASSETS-LICENSE.md](ASSETS-LICENSE.md)。
-
+The HTML, CSS, and JavaScript game code is available under the [MIT License](LICENSE). Images, music, sound effects, and the app icon are **not** covered by MIT; see [ASSETS-LICENSE.md](ASSETS-LICENSE.md).
