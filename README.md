@@ -4,7 +4,7 @@ Marchlords is an offline territory strategy game built around match-based mana g
 
 ## Play
 
-Download the repository as a ZIP and extract it fully. Open `index.html` in Edge or Chrome. Keep the `assets/` directory beside `index.html` so images, music, and sound effects load correctly. No installation or internet connection is required. Click the page or the music button to enable audio.
+Download the repository as a ZIP and extract it fully. Open `index.html` in Edge or Chrome. All game artwork is embedded in the HTML, so the menu, maps, and tiles also display correctly when the HTML is opened on its own. Keep the `assets/` directory beside `index.html` for music and sound effects. No installation or internet connection is required. Click the page or the music button to enable audio.
 
 The game includes Normal, Hard, Nightmare, and Endless March modes. Clear Stage 12 on any difficulty to unlock Endless March. Choose Chinese or English in Settings on either the main menu or the battlefield; the browser remembers your selection.
 
@@ -19,8 +19,9 @@ Progress is stored locally by your browser. Switching browsers, computers, or fi
 
 ## Repository contents
 
-- `index.html` — complete HTML, CSS, and JavaScript game source. Embedded media has been extracted so the code is easier to inspect and edit.
+- `index.html` — complete HTML, CSS, and JavaScript game source with embedded artwork. Music and sound effects load from `assets/`.
 - `assets/media/` — extracted images, music, and sound effects, named by content hash.
+- Original image files are preserved in `assets/media/`. The embedded copies use lossless WebP for small artwork and quality-95 WebP for large painted backdrops.
 - `assets/audio/` — sound effects that were already separate files.
 - `app-icon.png` — game icon.
 - `ASSETS-LICENSE.md` — media rights and reuse terms.
