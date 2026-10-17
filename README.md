@@ -15,6 +15,7 @@ Progress is stored locally by your browser. Switching browsers, computers, or fi
 ## Gameplay
 
 - Match colored tiles to gain mana, deploy troops, and capture territory.
+- Weapon clashes build across the three existing cascade levels: a sharp initial slash, an intensified second combo, and a four-weapon final shockwave. Effects and audio respect tactical pause and sound settings; reduced-motion preferences disable board shake and flying particles.
 - Select individual squads or drag a selection box, then order them toward enemies, structures, or a destination tile. Orders can also be issued during tactical pause.
 - Endless March features timed battles, upgrades between rounds, and base health that carries over.
 - More details: [Gameplay and updates](GAMEPLAY_AND_UPDATES.txt), [Endless mode guide](ENDLESS_MODE_GUIDE.txt), and [World lore](WORLD_LORE.txt). These longer guides are currently written in Chinese; the game itself supports both languages.
