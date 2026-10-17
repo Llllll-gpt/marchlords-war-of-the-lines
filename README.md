@@ -4,7 +4,9 @@ Marchlords is an offline territory strategy game built around match-based mana g
 
 ## Play
 
-Download the repository as a ZIP and extract it fully. Open `index.html` in Edge or Chrome. All game artwork is embedded in the HTML, so the menu, maps, and tiles also display correctly when the HTML is opened on its own. Keep the `assets/` directory beside `index.html` for music and sound effects. No installation or internet connection is required. Click the page or the music button to enable audio.
+Download the repository as a ZIP and extract it fully. Open `index.html` in Edge or Chrome. Keep the `assets/` directory beside it. No installation or internet connection is required. Click **Enable sound** on the opening screen, or use **Enable and test sound** in Settings. The page reports blocked playback or missing audio instead of failing silently. If the test reports playback but you hear nothing, check whether this game tab is muted.
+
+Runtime audio is bundled as standard MP3 data in local scripts, so music and effects do not depend on M4A decoding or local media-file requests. Sound effects use a shared audio context unlocked by a real click. Original recordings remain in `assets/` for archival use. The game tries the original recording if its audio bundle is unavailable.
 
 The game includes Normal, Hard, Nightmare, and Endless March modes. Clear Stage 12 on any difficulty to unlock Endless March. Choose Chinese or English in Settings on either the main menu or the battlefield; the browser remembers your selection.
 
@@ -23,6 +25,7 @@ Progress is stored locally by your browser. Switching browsers, computers, or fi
 - `assets/media/` — extracted images, music, and sound effects, named by content hash.
 - Original image files are preserved in `assets/media/`. The embedded copies use lossless WebP for small artwork and quality-95 WebP for large painted backdrops.
 - `assets/audio/` — sound effects that were already separate files.
+- `assets/runtime/` — bundled MP3 copies used during play and their SHA-256 checksums.
 - `app-icon.png` — game icon.
 - `ASSETS-LICENSE.md` — media rights and reuse terms.
 
